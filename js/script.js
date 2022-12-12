@@ -51,43 +51,32 @@ function getDate(e) {
 
   if (month.value == 1 && day.value >= 20 || month.value == 2 && day.value <= 18) {
     result = 'Водолій';
-    zodiacInfo.render(result);
   } else if (month.value == 2 && day.value >= 19 || month.value == 3 && day.value <= 20) {
     result = 'Риби';
-    zodiacInfo.render(result);
   } else if (month.value == 3 && day.value >= 21 || month.value == 4 && day.value <= 19) {
     result = 'Овен';
-    zodiacInfo.render(result);
   } else if (month.value == 4 && day.value >= 20 || month.value == 5 && day.value <= 20) {
     result = 'Телець';
-    zodiacInfo.render(result);
   } else if (month.value == 5 && day.value >= 21 || month.value == 6 && day.value <= 21) {
     result = 'Близнюки';
-    zodiacInfo.render(result);
   } else if (month.value == 6 && day.value >= 22 || month.value == 7 && day.value <= 22) {
     result = 'Рак';
-    zodiacInfo.render(result);
   } else if (month.value == 7 && day.value >= 23 || month.value == 8 && day.value <= 22) {
     result = 'Лев';
-    zodiacInfo.render(result);
   } else if (month.value == 8 && day.value >= 23 || month.value == 9 && day.value <= 22) {
     result = 'Діва';
-    zodiacInfo.render(result);
   } else if (month.value == 9 && day.value >= 23 || month.value == 10 && day.value <= 22) {
     result = 'Терези';
-    zodiacInfo.render(result);
   } else if (month.value == 10 && day.value >= 23 || month.value == 11 && day.value <= 21) {
     result = 'Скорпіон';
-    zodiacInfo.render(result);
   } else if (month.value == 11 && day.value >= 22 || month.value == 12 && day.value <= 21) {
     result = 'Стрілець';
-    zodiacInfo.render(result);
   } else if (month.value == 12 && day.value >= 22 || month.value == 1 && day.value <= 19) {
     result = 'Козеріг';
-    zodiacInfo.render(result);
   } else {
     // console.log('Не вірна дата');
   }
+  zodiacInfo.render(result);
 }
 
 
