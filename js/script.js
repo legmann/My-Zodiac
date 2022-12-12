@@ -76,7 +76,7 @@ function getDate(e) {
   } else {
     // console.log('Не вірна дата');
   }
-  zodiacInfo.render(result);
+  Zodiac.render(result);
 }
 
 

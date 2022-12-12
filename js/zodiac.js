@@ -1,7 +1,7 @@
 class Zodiac {
   constructor() {
   }
-  render() {
+  static render() {
     for (let i = 0; i < zodiacList.length; i++) {
       if (result === zodiacList[i].name) {
         const contentBlock = document.querySelector('.content-block');
