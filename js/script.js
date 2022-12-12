@@ -38,10 +38,11 @@ for (let i = 1920; i < new Date().getFullYear(); i++) {
 }
 formButton.insertAdjacentElement('beforebegin', year)
 
-
+let result = '';
 
 function getDate(e) {
   e.preventDefault();
+  const zodiacInfo = new Zodiac(userName);
   // console.log(year.value);
   // console.log(userName.value);
   // console.log(day.value);
@@ -49,33 +50,46 @@ function getDate(e) {
 
 
   if (month.value == 1 && day.value >= 20 || month.value == 2 && day.value <= 18) {
-    console.log('Водолій');
+    result = 'Водолій';
+    zodiacInfo.render(result);
   } else if (month.value == 2 && day.value >= 19 || month.value == 3 && day.value <= 20) {
-    console.log('Риби');
+    result = 'Риби';
+    zodiacInfo.render(result);
   } else if (month.value == 3 && day.value >= 21 || month.value == 4 && day.value <= 19) {
-    console.log('Овен');
+    result = 'Овен';
+    zodiacInfo.render(result);
   } else if (month.value == 4 && day.value >= 20 || month.value == 5 && day.value <= 20) {
-    console.log('Телець');
+    result = 'Телець';
+    zodiacInfo.render(result);
   } else if (month.value == 5 && day.value >= 21 || month.value == 6 && day.value <= 21) {
-    console.log('Близнюки');
+    result = 'Близнюки';
+    zodiacInfo.render(result);
   } else if (month.value == 6 && day.value >= 22 || month.value == 7 && day.value <= 22) {
-    console.log('Рак');
+    result = 'Рак';
+    zodiacInfo.render(result);
   } else if (month.value == 7 && day.value >= 23 || month.value == 8 && day.value <= 22) {
-    console.log('Лев');
+    result = 'Лев';
+    zodiacInfo.render(result);
   } else if (month.value == 8 && day.value >= 23 || month.value == 9 && day.value <= 22) {
-    console.log('Діва');
+    result = 'Діва';
+    zodiacInfo.render(result);
   } else if (month.value == 9 && day.value >= 23 || month.value == 10 && day.value <= 22) {
-    console.log('Терези');
+    result = 'Терези';
+    zodiacInfo.render(result);
   } else if (month.value == 10 && day.value >= 23 || month.value == 11 && day.value <= 21) {
-    console.log('Скорпіон');
+    result = 'Скорпіон';
+    zodiacInfo.render(result);
   } else if (month.value == 11 && day.value >= 22 || month.value == 12 && day.value <= 21) {
-    console.log('Стрілець');
+    result = 'Стрілець';
+    zodiacInfo.render(result);
   } else if (month.value == 12 && day.value >= 22 || month.value == 1 && day.value <= 19) {
-    console.log('Козеріг');
+    result = 'Козеріг';
+    zodiacInfo.render(result);
   } else {
-    console.log('Не вірна дата');
+    // console.log('Не вірна дата');
   }
-
 }
+
+
 
 formButton.addEventListener('click', getDate);
