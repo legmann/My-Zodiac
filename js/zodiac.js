@@ -18,7 +18,6 @@ class Zodiac {
           <p>${zodiacList[i].description}</p>
           <p>Чоловік ${zodiacList[i].name}: ${zodiacList[i].men}</p>
           <p>Жінка ${zodiacList[i].name}: ${zodiacList[i].woman}</p>
-          <p>Дитина ${zodiacList[i].name}: ${zodiacList[i].child}</p>
           <p>Сумісність з іншими знаками: ${zodiacList[i].partner}</p>
           <p>Знаменитості, які народилися під знаком ${zodiacList[i].name}: ${zodiacList[i].partner}</p>
         </div>`;
