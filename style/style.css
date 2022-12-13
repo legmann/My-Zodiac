@@ -1,5 +1,7 @@
 body {
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
+  background-image: url('../img/bg.png');
+  background-size: cover;
 }
 
 .page-wrapper {
