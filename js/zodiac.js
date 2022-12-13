@@ -9,7 +9,6 @@ class Zodiac {
           `<div class="info-box">
           <h1 class="title">${zodiacList[i].name}</h1>
           <img src="./img/zodiac-list/${zodiacList[i].image}.png" alt="">
-          <p>${userName.value} Ваш знак зодіаку - ${zodiacList[i].name}</p>
           <p>Елемент: ${zodiacList[i].element}</p>
           <p>Символ: ${zodiacList[i].symbol}</p>
           <p>Планета: ${zodiacList[i].planet}</p>
