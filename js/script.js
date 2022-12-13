@@ -27,22 +27,21 @@ for (let i = 0; i < monthList.length; i++) {
 formButton.insertAdjacentElement('beforebegin', month)
 
 // Рік
-const year = document.createElement('select');
-year.classList.add('year');
-year.setAttribute('type', 'select');
-for (let i = 1920; i < new Date().getFullYear(); i++) {
-  const yearOptionElem = document.createElement('option');
-  yearOptionElem.setAttribute('value', i);
-  yearOptionElem.textContent = i;
-  year.append(yearOptionElem);
-}
-formButton.insertAdjacentElement('beforebegin', year)
+// const year = document.createElement('select');
+// year.classList.add('year');
+// year.setAttribute('type', 'select');
+// for (let i = 1920; i < new Date().getFullYear(); i++) {
+//   const yearOptionElem = document.createElement('option');
+//   yearOptionElem.setAttribute('value', i);
+//   yearOptionElem.textContent = i;
+//   year.append(yearOptionElem);
+// }
+// formButton.insertAdjacentElement('beforebegin', year)
 
 let result = '';
 
 function getDate(e) {
   e.preventDefault();
-  const zodiacInfo = new Zodiac(userName);
   // console.log(year.value);
   // console.log(userName.value);
   // console.log(day.value);
