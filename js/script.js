@@ -1,4 +1,4 @@
-const userName = document.getElementById('name');
+// const userName = document.getElementById('name');
 const form = document.getElementById('form');
 const formButton = document.querySelector('.button');
 
@@ -42,11 +42,6 @@ let result = '';
 
 function getDate(e) {
   e.preventDefault();
-  // console.log(year.value);
-  // console.log(userName.value);
-  // console.log(day.value);
-  // console.log(month.value);
-
 
   if (month.value == 1 && day.value >= 20 || month.value == 2 && day.value <= 18) {
     result = 'Водолій';
@@ -77,7 +72,5 @@ function getDate(e) {
   }
   Zodiac.render(result);
 }
-
-
 
 formButton.addEventListener('click', getDate);
